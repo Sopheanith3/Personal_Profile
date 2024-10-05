@@ -1,10 +1,3 @@
-*{
-    margin:0; 
-    padding:0;
-    text-decoration: none;
-    font-family: "Montserrat";
-}
-
 body{
     height: 100vh;
     display: flex;
@@ -27,7 +20,63 @@ body{
     object-fit: cover;
 }
 
-.container {
+.container { 
     z-index: 1;
     text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    padding: 70px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.15);
+}
+
+.container-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1, .btn2, .btn3, .btn4{
+    color: #3498db;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+    color: black;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: lightblue;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before, .btn3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn2::before,.btn4::before{
+    top:0;
+    bottom: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before,.btn2:hover::before,.btn3:hover::before,.btn4:hover::before{
+    height: 180% ;
 }
