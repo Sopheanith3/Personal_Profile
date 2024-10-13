@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="profileCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="background">
@@ -16,11 +18,18 @@
         <h3>The site is nearly readyy please be in patient</h3>
         <div class="progress-bar"><span></span></div>
         <div class="sm">
-            <button class="btn btn1">Project</button>
-            <button class="btn btn2">Resume</button>
-            <button class="btn btn3">Linklin</button>
-            <button class="btn btn4">About Me</button>
+            <button class="btn btn1" id = "resumeButton">RESUME</button>
+            <button class="btn btn2">PROJECTS</button>
+            <button class="btn btn3">LINKEDIN</button>
+            <button class="btn btn4">ABOUT ME</button>
         </div>
     </div>
+
+    <div class= "pdf-slideshow" id="pdfslideshow">
+        <button class = "close-btn" id = "closeBtn">Close</button>
+        <iframe id = "pdfFrame" src = "resume.pdf" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
