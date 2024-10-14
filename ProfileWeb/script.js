@@ -21,3 +21,4 @@ document.getElementById("linkedinButton").addEventListener("click", function() {
 document.getElementById("githubButton").addEventListener("click", function() {
     window.open("https://github.com/Sopheanith3", "_blank");
 });
+
