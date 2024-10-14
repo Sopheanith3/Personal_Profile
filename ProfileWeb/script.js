@@ -13,3 +13,11 @@ closeBtn.addEventListener('click', function() {
     console.log('Close button clicked');
     pdfSlideshow.style.display = 'none'; // Hide the slideshow
 });
+
+document.getElementById("linkedinButton").addEventListener("click", function() {
+    window.open("https://www.linkedin.com/in/sopheanith-ny3/", "_blank");
+});
+
+document.getElementById("githubButton").addEventListener("click", function() {
+    window.open("https://github.com/Sopheanith3", "_blank");
+});
