@@ -14,7 +14,7 @@ const closeProject = document.getElementById('closeProject');
 
 // Event listener for the resume button
 resumeButton.addEventListener('click', function() {
-    pdfSlideshow.style.display = 'flex'; // Show the slideshow
+    pdfSlideshow.style.display = 'flex'; 
 });
 
 // Event listener for the close button
@@ -29,7 +29,7 @@ aboutMeButton.addEventListener('click', function() {
 
 // Close About Me modal
 closeAboutMeModal.addEventListener('click', function() {
-    aboutMeModal.style.display = 'none'; // Hide the modal
+    aboutMeModal.style.display = 'none'; 
 });
 
 // Show Project modal
@@ -39,7 +39,7 @@ projectButton.addEventListener('click', function() {
 
 // Close Project modal
 closeProject.addEventListener('click', function() {
-    myProject.style.display = 'none'; // Hide the modal when the close button is clicked
+    myProject.style.display = 'none'; 
 });
 
 // LinkedIn and GitHub button listeners
