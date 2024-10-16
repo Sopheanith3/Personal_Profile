@@ -104,8 +104,7 @@ body {
     cursor: pointer;
 }
 
-
-/* Modal Styles */
+/* About me Modal Styles */
 .modal {
     position: fixed;
     z-index: 1;
@@ -131,6 +130,51 @@ body {
     position: relative; /* Allows positioning of close button */
 }
 
+.myProject{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.project-content{
+    background-color: #333;
+    border-radius: 10px;
+    width: 50%;
+    max-height: 80%;
+    overflow-y: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.project-content::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.project-content::-webkit-scrollbar-track {
+    background: #444; 
+    border-radius: 10px; 
+}
+
+.project-content::-webkit-scrollbar-track {
+    background: #444; 
+    border-radius: 10px; 
+}
+
+.project-content::-webkit-scrollbar-thumb {
+    background-color: #68A0DE; 
+    border-radius: 10px; 
+    border: 3px solid #444; 
+}
+
 /* Close Button */
 .close-btn {
     position: absolute;
@@ -147,26 +191,33 @@ body {
     color: #ccc; /* Lighten on hover */
 }
 
-.myProject{
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+hr {
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    border-bottom: solid .25px white;
 }
 
-.project-content{
-    background-color: #333;
-    border-radius: 10px;
-    width: 60%;
-    /* max-width: 600px; */
-    padding: 20px;
-    text-align: center;
-    color: white;
-    position: relative;
+.align-left {
+    text-align: left; /* Align text to the left */
+}
+
+.modal-content h1, .project-content h1, 
+.modal-content h2, .project-content h2 {
+    text-align: left; /* Aligns the text to the left */
+    margin: 0; /* Optional: removes any default margin */
+}
+
+.image-container {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    margin-top: 10px;           
+}
+
+.project-image, .project-image2 {
+    width: 100%; 
+    height: auto; 
+    max-width: 1000px; 
+    border-radius: 5px; 
+    border: #333; 
 }
