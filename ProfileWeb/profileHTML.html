@@ -19,19 +19,38 @@
         <div class="progress-bar"><span></span></div>
         <div class="sm">
             <button class="btn btn1" id = "resumeButton">RESUME</button>
-            <button class="btn btn2">PROJECTS</button>
+            <button class="btn btn2" id ="projectButton">PROJECTS</button>
             <button class="btn btn3" id = "githubButton">GITHUB</button>
             <button class="btn btn4" id = "linkedinButton">LINKEDIN</button>
             <button class="btn btn5" id = "aboutMeButton">ABOUT ME</button>
         </div>
     </div>
 
-    <div class= "pdf-slideshow" id="pdfslideshow">
-        <button class = "close-btn" id = "closeBtn">Close</button>
-        <iframe id = "pdfFrame" src = "resume.pdf" allowfullscreen></iframe>
+    <div class="pdf-slideshow" id="imgslideshow">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img id="resumeImage" src="resume.jpg">
+    </div>
+    
+
+    <!-- /*About me */ -->
+    <div class="modal" id="aboutMeModal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAboutMeModal">&times;</span>
+            <h2>About Me</h2>
+            <p>Hello! My name is Sopheanith Ny. I'm passionate about computer science and 
+                working on building a better future through technology. 
+                This portfolio showcases my skills, projects, and experiences. 
+                I hope you enjoy exploring my work!</p>
+        </div>
     </div>
 
-
+    <!-- /* Project */ -->  
+    <div class="myProject" id="project" style="display: none;">
+        <div class = "project-content">
+            <span class = "close-btn" id="closeProject">&times;</span>
+            <h1>Projects</h1>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

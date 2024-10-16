@@ -78,10 +78,19 @@ body {
     align-items: center;
 }
 
-.pdf-slideshow iframe {
-    width: 80%;
-    height: 80%;
-    border: none; 
+.pdf-slideshow img {
+    max-width: 90%;  /* Ensures image does not exceed viewport */
+    max-height: 90%; /* Ensures image does not exceed viewport */
+    height: auto;    /* Maintains aspect ratio */
+    border: none;    /* Clean look */
+    display: block;  /* Centers the image */
+    margin: auto;    /* Centers the image horizontally */
+    transition: transform 0.2s;
+} 
+
+/* Zoom on hover */
+.pdf-slideshow img:hover {
+    transform: scale(1.25);
 }
 
 .close-btn {
@@ -95,3 +104,69 @@ body {
     cursor: pointer;
 }
 
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #333;
+    border-radius: 10px;
+    width: 60%;
+    /* max-width: 600px; */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative; /* Allows positioning of close button */
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Aligns it to the top-right corner */
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ccc; /* Lighten on hover */
+}
+
+.myProject{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content{
+    background-color: #333;
+    border-radius: 10px;
+    width: 60%;
+    /* max-width: 600px; */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
